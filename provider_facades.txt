@@ -1,0 +1,9 @@
+Facades:
+1. App > Facades > Make a Class and it's facades here like Invoice.php is the class, InvoiceFacades.php is the facade
+2. App > Providers > AppServiceProvider.php > in register() function, bind with a name and return the object of the class
+3. config > app.php > in aliases array keep the facade
+
+Service Provider:
+1. php artisan make:provider CommonVariableProvider
+2. in CommonVariableProvider's boot() method write what you want
+3. config > app.php > in provider array keep the service provider 
